@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+
+ <!-- Latest compiled and minified CSS -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+ <!-- jQuery library -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ 
+ <!-- Latest compiled JavaScript -->
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> 
+
+    <style>
+        .tengah{
+            text-align: center; 
+        
+        }
+    </style>
+</head>
+<body class="tengah">
+    <input type="text" id="data" class="form-group form-group-lg" > <br>
+    <button onclick="document.querySelector('#data').value += 1"class="btn btn-primary btn-md">1</button>
+    <button onclick="document.querySelector('#data').value += 2"class="btn btn-primary btn-md">2</button>
+    <button onclick="document.querySelector('#data').value += 3"class="btn btn-primary btn-md">3</button>
+    <button onclick="document.querySelector('#data').value += '+'" class="btn btn-primary btn-md">+</button> <br>
+    <button onclick="document.querySelector('#data').value += 4" class="btn btn-primary btn-md">4</button>
+    <button onclick="document.querySelector('#data').value += 5" class="btn btn-primary btn-md">5</button>
+    <button onclick="document.querySelector('#data').value += 6" class="btn btn-primary btn-md">6</button>
+    <button onclick="document.querySelector('#data').value += '-'" class="btn btn-primary btn-md">-</button> <br>
+    <button onclick="document.querySelector('#data').value += 7"class="btn btn-primary btn-md">7</button>
+    <button onclick="document.querySelector('#data').value += 8"class="btn btn-primary btn-md">8</button>
+    <button onclick="document.querySelector('#data').value += 9" class="btn btn-primary btn-md">9</button> 
+    <button onclick="document.querySelector('#data').value += '*'"class="btn btn-primary btn-md">*</button><br>
+    <button onclick="document.querySelector('#data').value += 0" class="btn btn-primary btn-md" >0</button>
+    <button onclick="alert(eval(document.querySelector('#data').value))" class="btn btn-primary btn-md" > = </button>
+</body>
+</html>
